@@ -1,28 +1,30 @@
-# black_friday_analysis
-Black Friday Sales: Business proposal + production data pipeline (550k rows cleaned) → EDA/modelling roadmap
 # 🛒 Black Friday Sales Analysis
 
-## 🎯 Business Objective
-See [🛒 proposal PDF](./Black_Friday_Proposal.pdf) for full business context
+Business proposal + production-style data pipeline (550k rows cleaned) with EDA and modelling roadmap.
 
+## 🎯 Business Objective
+Maximise Black Friday profit by identifying high-value customers for targeted promotions based on spending behaviour and customer demographics.
+
+See [🛒 proposal PDF](./Black_Friday_Proposal.pdf) for full business context.
 
 ## 📊 Dataset
-- 550,068 transactions from Black Friday sales
-- Customer demographics + product categories + purchase amounts
-- Challenge: ~58% missing secondary categories
+- 550,068 Black Friday transactions
+- Customer demographics, product categories, and purchase amounts
+- Data challenge: ~58% missing secondary product categories
 
 ## 🛠️ Data Pipeline (Complete)
-✅ **Load** 550k rows  
-✅ **Rename** snake_case columns  
-✅ **Optimise** categorical dtypes (memory savings)  
-✅ **Impute** product_cat2/3 → "Unknown" (preserves all data)  
-✅ **Validate** no nulls/duplicates  
+✅ Loaded and validated 550k rows  
+✅ Standardised columns to snake_case  
+✅ Optimised categorical dtypes for memory efficiency  
+✅ Imputed product_cat_2/3 as `"Unknown"` to preserve all records  
+✅ Verified no nulls or duplicates post-cleaning  
 
-## 🔮 Next (WIP)
-- EDA: Purchase distributions, customer segments  
-- Features: Age numeric, category encodings  
-- Model: XGBoost → RMSE prediction  
+## 🔮 Next (Work in Progress)
+- **EDA**: Purchase distributions, demographic trends, customer segments  
+- **Feature engineering**: Age encoding, category transformations  
+- **Modelling**: Predict customer purchase value using XGBoost (RMSE)
 
-**Tech**: Pandas, (planned: Plotly, XGBoost)
+**Tech stack**: Python, Pandas  
+*(Planned: Plotly, XGBoost)*
 
-[Black_Friday_Proposal.pdf](./Black_Friday_Proposal.pdf)
+📄 [Black_Friday_Proposal.pdf](./Black_Friday_Proposal.pdf)
