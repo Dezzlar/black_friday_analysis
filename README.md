@@ -3,7 +3,8 @@ Black Friday Sales: Business proposal + production data pipeline (550k rows clea
 # 🛒 Black Friday Sales Analysis
 
 ## 🎯 Business Objective
-See [Black_Friday_Proposal.pdf] Optimise inventory/pricing via purchase prediction.
+See [🛒 proposal PDF](./Black_Friday_Proposal.pdf) for full business context
+
 
 ## 📊 Dataset
 - 550,068 transactions from Black Friday sales
